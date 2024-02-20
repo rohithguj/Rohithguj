@@ -12,7 +12,7 @@ export default function Home() {
 function Nav() {
   return (
     <div className="absolute inset-x-0 top-0 bg-purple-900/20 backdrop-filter backdrop-blur-lg">
-      <div className="h-full flex justify-end items-center px-4 py-2">
+      <div className="h-full flex justify-end items-center px-4 ">
         <NavBtn color="text-purple-600" buttonText="Home" />
         <NavBtn color="text-purple-600" buttonText="Work" />
         <NavBtn color="text-purple-600" buttonText="Projects" />
@@ -25,7 +25,9 @@ function Nav() {
 
 function NavBtn({ color, bgColor, buttonText }: ButtonProps) {
   return (
-    <button className={`${color} ${bgColor} font-semibold px-4 py-2 rounded`}>
+    <button
+      className={`${color} ${bgColor} font-semibold px-4 py-4 rounded hover:text-purple-700 hover:shadow-md hover:bg-purple-700/20`}
+    >
       {buttonText}
     </button>
   );
