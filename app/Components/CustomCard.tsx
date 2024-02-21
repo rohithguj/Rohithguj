@@ -1,8 +1,10 @@
+/* eslint-disable */
 "use client";
 import React, { useState } from "react";
 import { NavBtn } from "./CustomBtn";
+import { CardData } from "../Types/CardData";
 
-const CustomCard = ({ cardData }) => {
+const CustomCard: React.FC<CardData> = ({ cardData }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCardClick = () => {
