@@ -94,7 +94,7 @@ export function TechnicalSkills() {
       alt: "Image 2",
     },
   ];
-
+  return(<div></div>)
   // return <Carousel images={images} />;
 }
 
