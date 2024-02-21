@@ -48,7 +48,11 @@ function Nav() {
           buttonText="Certification"
           href="certifications"
         />
-        <NavBtn color="text-purple-800 font-semibold" buttonText="Education" />
+        <NavBtn
+          color="text-purple-800 font-semibold"
+          buttonText="Education"
+          href="education"
+        />
       </div>
     </div>
   );
@@ -225,8 +229,8 @@ function Certifications() {
   ];
 
   return (
-    <div className="flex flex-col pt-10 px-10" id="certifications">
-      <div className="text-2xl font-bold">certifications</div>{" "}
+    <div className="flex flex-col pt-20 pb-20 px-10" id="certifications">
+      <div className="text-2xl font-bold">Certifications</div>{" "}
       <div className="flex flex-wrap justify-center pt-10 gap-x-10 gap-y-24">
         {certifications.map((certification) => (
           <CustomCard
@@ -272,7 +276,7 @@ function Education() {
   ];
 
   return (
-    <div className="flex flex-col pt-10 px-10" id="certifications">
+    <div className="flex flex-col pt-20 pb-20 px-10" id="education">
       <div className="text-2xl font-bold">Education</div>{" "}
       <div className="flex flex-wrap justify-center pt-10 gap-x-10 gap-y-24">
         {Educations.map((Education) => (
