@@ -1,11 +1,8 @@
-import Image from "next/image";
 import p3 from "./../public/p3.png";
 import FlippingText from "./Components/FlippingText";
 import { NavBtn } from "./Components/CustomBtn";
 import CustomCard from "./Components/CustomCard";
 import { CardData } from "./Types/CardData";
-import Carousel from "./Components/Carousel";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logos from "./Components/Logos";
 
 export default function Home() {
@@ -98,7 +95,7 @@ export function TechnicalSkills() {
     },
   ];
 
-  return <Carousel images={images} />;
+  // return <Carousel images={images} />;
 }
 
 function Work() {
