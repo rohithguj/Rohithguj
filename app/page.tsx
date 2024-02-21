@@ -81,22 +81,22 @@ function HomeData() {
   );
 }
 
-export function TechnicalSkills() {
-  const images = [
-    {
-      id: 1,
-      src: p3.src,
-      alt: "Image 1",
-    },
-    {
-      id: 2,
-      src: "/path-to-your-image/image2.jpg",
-      alt: "Image 2",
-    },
-  ];
-  return(<div></div>)
-  // return <Carousel images={images} />;
-}
+// export function TechnicalSkills() {
+//   const images = [
+//     {
+//       id: 1,
+//       src: p3.src,
+//       alt: "Image 1",
+//     },
+//     {
+//       id: 2,
+//       src: "/path-to-your-image/image2.jpg",
+//       alt: "Image 2",
+//     },
+//   ];
+//   return(<div></div>)
+//   // return <Carousel images={images} />;
+// }
 
 function Work() {
   const workExperiences: CardData[] = [
