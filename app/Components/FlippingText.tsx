@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 
-const FlippingText = ({ textData, interval = 3000 }) => {
+type customInput = {
+  textData: string[];
+  interval: number;
+};
+const FlippingText = ({ textData, interval = 3000 }: customInput) => {
   const index = 1;
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentText = textData[currentIndex];
