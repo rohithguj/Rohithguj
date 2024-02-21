@@ -23,7 +23,7 @@ export default function Home() {
 
 function Nav() {
   return (
-    <div className="absolute inset-x-0 top-0 flex justify-between bg-purple-900/20 z-50 backdrop-filter backdrop-blur-lg sticky">
+    <div className="inset-x-0 top-0 flex justify-between bg-purple-900/20 z-50 backdrop-filter backdrop-blur-lg sticky">
       <div className="items-center flex pl-2">
         <Logos />
       </div>

@@ -4,7 +4,12 @@ import React, { useState } from "react";
 import { NavBtn } from "./CustomBtn";
 import { CardData } from "../Types/CardData";
 
-const CustomCard: React.FC<CardData> = ({ cardData }) => {
+type customInput = {
+  key: string;
+  cardData: CardData;
+};
+
+const CustomCard: React.FC<customInput> = ({ key, cardData }: customInput) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCardClick = () => {
@@ -49,7 +54,7 @@ const CustomCard: React.FC<CardData> = ({ cardData }) => {
                   color="text-purple-600"
                   buttonText="Detailed View"
                   href={cardData.redirectUrl}
-                />{" "}
+                />
               </div>
             )}
           </div>
